@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel Royale</title>
+        <link rel="icon" href="./favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="head">Hotel Registration Form</div>
+       <div class="container">
+       <div class="part1">
+        <span style="font-size:40px; color:red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;----
+            Customer Info-----</span>
+            <br>
+            <br>
+            <form id="f">
+                <label for="cname">Customer Name:<span style="color:red;font-size:30px;">*</span><br>
+                <input type="text" id="cname" name="cname" required></label><br><br>
+                <label for="datein">Check-in Date:<span style="color:red;font-size:30px;">*</span><br>
+                <input type="date" id="datein" name="datein" required></label><br><br>
+                <label for="days">Total No of Days:<span style="color:red;font-size:30px;">*</span><br>
+                <input type="number" id="days" name="days" required></label><br><br>
+                <label for="person">Total No of Persons:<span style="color:red;font-size:30px;">*</span><br>
+                <input type="number" id="person" name="person" required></label><br><br>
+              <br>
+            <span style="font-size:40px; color:red">&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;----
+                Room Information----</span>
+                <br>
+                <br>
+                <label for="rt">Room type:<span style="color:red;font-size:30px;">*</span><br>
+                <select id="rt">
+                    <option >Select the type</option>
+                    <option value="d">Deluxe Room</option>
+                    <option value="s">Suite Room</option>
+                </select>
+            </label>
+                <br><br>
+                <label for="amen">Amenities:<span style="color:red;font-size:30px;">*</span><br>
+                <select id="amen">
+                    <option >Select</option>
+                    <option value="a">AC</option>
+                    <option value="l">Locker</option>
+                </select>
+            </label>
+               <p style="color: red;">NOTE:</p>
+               DELUXE : 2500/-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUITE : 4000/-
+               <br><br>
+               AC : 1000/-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;LOCKER : 300/-
+               <br> <br>
+            <span style="font-size:40px; color:red">&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;----
+                Payment Info----</span>
+                <br><br>
+                    <label for="advance">Advance Payment:<span style="color:red;font-size:30px;">*</span><br>
+                    <input type="number" id="advance" name="advance" required></label><br><br>
+                &nbsp;&nbsp; &nbsp;&nbsp;<button style="background-color: green; color:white; border-radius: 10px; font-size: 40px;" onclick="calculate()"> Calculate And Submit</button>&nbsp;&nbsp;
+                <br><br>
+                <span style="font-size:40px; color:red">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---Cost Calculation---</span>
+                    <br>
+                    <br>
+                    <label for="room">Total Room Cost:<br>
+                    <input id="rooms" readonly></label><br><br>
+                    <label for="amenties">Total Amenties Cost:<br>
+                    <input id="amenc" readonly></label><br><br>
+            <span style="font-size:40px; color:red">&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;----
+                Additional Charges----</span>
+                <br><br>
+          Per Day Cost for Extra Person(>2): 1000/-
+                <br><br>
+                <label for="addc">Additional charge:<br>
+                    <input id="acharge" readonly></label><br><br>
+               <span style="font-size:40px; color:red">&nbsp;&nbsp;
+                ----
+                Total Cost And Balance----</span>
+                <br>
+                <br>
+                <label for="total">Total Cost:</label><br>
+                <input id="total" readonly><br><br>
+                <label for="balance">Balance Amount:</label><br>
+                <input id="balance" readonly><br><br>
+            </form>
+       </div>
+       </div>
+       <br>
+     <center><div>
+        <a href="./end.html" target="_self"><button style="background-color: rgb(215, 9, 9); color:white; border-radius: 10px; font-size: 40px;" type="submit">Register</button></a>
+       </div></center>
+       
+       <script src="script.js"></script>
+    </body>
+</html>

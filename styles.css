@@ -1,0 +1,48 @@
+body {
+    background-image: url('https://img.freepik.com/free-photo/luxury-modern-style-bedroom-interior-hotel-bedroom-generative-ai-illustration_1258-151610.jpg');
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  .head{
+    text-align: center;
+    font-size: 40px;
+    color:white;
+  }
+.container{
+    margin-top:50px;
+    margin-left:400px;
+    margin-right:400px;
+    background-color: black;
+    opacity:0.8;
+    height:2300px;
+    border-radius: 10px;
+    color:white;
+    padding-left:30px;
+    padding-right:30px;
+    font-size:40px;
+    display:flex;
+}
+.part1{
+    margin-top:20px;
+    height:500px;
+    width:90%;
+    background-color:black;
+    opacity:0.8;
+    color:white;
+    padding-top:20px;
+    padding-left:20px;
+    font-size:30px;
+}
+
+
+input,select{
+    width:60%;
+    height:35px;
+    font-size:30px;
+}
+button{
+    background-color:rgb(39, 183, 37);
+    border-radius: 10px;
+    font-size: 25px;
+    color:black;
+}
